@@ -1,5 +1,6 @@
 # Visual Studio 2015 user specific files
 .vs/
+.idea/
 
 # Compiled Object files
 *.slo
@@ -49,6 +50,10 @@ SourceArt/**/*.tga
 Binaries/*
 Plugins/**/Binaries/*
 
+# Packaged builds (keep these outside the source repository)
+Windows/
+Android_ASTC/
+
 # Builds
 Build/*
 
@@ -72,3 +77,20 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Unreal generated directories
+Saved/
+Intermediate/
+Binaries/
+
+# Registration-only snapshot: exclude all Content assets except Blueprint assets.
+# WBP/ABP/BPI are also Blueprint-based assets commonly used for widgets,
+# animation blueprints, and blueprint interfaces.
+Content/**
+!Content/
+!Content/**/
+!Content/**/BP_*.uasset
+!Content/**/WBP_*.uasset
+!Content/**/ABP_*.uasset
+!Content/**/BPI_*.uasset
+!Content/**/Bp_*.uasset
